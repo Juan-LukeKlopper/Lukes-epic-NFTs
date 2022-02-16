@@ -8,7 +8,7 @@ const main = async () => {
     await txn.wait();
     console.log("Finished minting NFT #1");
 
-    let txn = await nftContract.makeAnEpicNFT();
+    txn = await nftContract.makeAnEpicNFT();
     await txn.wait();
     console.log("Finished minting NFT #2");
 };
